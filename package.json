@@ -1,0 +1,21 @@
+{
+  "name": "gitlab-checker",
+  "version": "0.1.0",
+  "description": "Command line utility for performing some gitlab checks",
+  "main": "gitlab.js",
+  "bin": {
+    "gitlab-checker": "gitlab.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "mkdirp": "^0.5.1",
+    "prompt": "^1.0.0",
+    "q": "^1.4.1",
+    "yargs": "^4.7.1"
+  }
+}
