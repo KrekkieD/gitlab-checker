@@ -307,7 +307,9 @@ function _output (repos) {
                     repoLog.branches.push($colors.cyan('    [ PENDING RELEASE ]') + ' Branch master and latest tag are not at the same commit ID');
                     repoLog.branches.push('        Last commit on master@' + masterBranch.packageJson.version + ': : ' + _formatCommitMessage(masterBranch.commit));
                     repoLog.branches.push('        Last commit on develop@' + developBranch.packageJson.version + ': : ' + _formatCommitMessage(developBranch.commit));
-                    repoLog.branches.push('        Last commit on tag ' + tags[0].name + ': ' + _formatCommitMessage(tags[0].commit));
+                    if (tags.length) {
+                        repoLog.branches.push('        Last commit on tag ' + tags[0].name + ': ' + _formatCommitMessage(tags[0].commit));
+                    }
                 }
 
             }
